@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #000000, #333333);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+nav a:hover {
+    color: #F5A623;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('assets/blockchain-bg.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to improve text contrast */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.referral-message {
+    background: rgba(245, 166, 35, 0.4); /* Slightly more opaque for readability */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.highlight {
+    color: #F5A623;
+    text-shadow: 0 0 10px rgba(245, 166, 35, 0.8);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.cta-button {
+    background: #F5A623;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background 0.3s;
+    text-shadow: none; /* No shadow on button text for clarity */
+}
+
+.cta-button:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.countdown {
+    margin: 30px 0;
+}
+
+.countdown h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+#countdownTimer {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero-image {
+    width: 200px;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 10px rgba(245, 166, 35, 0.5));
+}
+
+/* Roadmap Section */
+.roadmap {
+    padding: 80px 0;
+    background: #333333;
+    text-align: center;
+}
+
+.roadmap h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: left;
+}
+
+.timeline-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.timeline-item p {
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Download Section */
+.download {
+    padding: 80px 0;
+    text-align: center;
+    background: #000000;
+}
+
+.download h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.download-buttons {
+    margin: 30px 0;
+}
+
+.download-buttons .cta-button {
+    margin: 10px;
+}
+
+.wallet-image {
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: #333333;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F5A623;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.about p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #333333;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.popup-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #F5A623;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.popup-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.close:hover {
+    color: #F5A623;
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    color: #F5A623;
+    margin: 0 10px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.social-links a:hover {
+    color: #FFFFFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .wallet-image {
+        width: 200px;
+    }
+
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+}
