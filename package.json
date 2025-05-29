@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "vercel-build": "git lfs install && git lfs pull"
+  }
+}
