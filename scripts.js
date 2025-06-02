@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display referral message if refId exists
     if (refId) {
-        referralMessage.innerHTML = `You were referred by <strong>${refId}</strong>. Download the PulseWallet App and claim your eligible amount of Pulse Token! Your claim is based on your Core Blockchain transactions.`;
+        referralMessage.innerHTML = `You were referred by <strong>${refId}</strong>. Download the NovaWallet App and claim your eligible amount of Nova Token! Your claim is based on your BNB Blockchain transactions.`;
         referralMessage.style.display = 'block';
     }
 
     // Countdown Timer
-    const launchDate = new Date('July 1, 2025 00:00:00').getTime();
+    const launchDate = new Date('July 7, 2025 00:00:00').getTime();
     const countdownTimer = document.getElementById('countdownTimer');
 
     function updateCountdown() {
